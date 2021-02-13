@@ -1,0 +1,240 @@
+@import "../../bootstrap/scss/bootstrap.scss";
+
+$beige: #F6F6EF;
+$dark-orange: #FF6600;
+$dark-gray: #828282;
+$text-black: black;
+
+
+html {
+  font-size: 100%;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-header {
+  background: $dark-orange;
+}
+
+.site-header a {
+  color: $text-black;
+}
+
+.y-logo {
+  border: 1px solid white;
+
+  width: 22px;
+  height: 22px;
+}
+
+.hacker-news:hover {
+  text-decoration: none;
+}
+
+.hacker-news, nav {
+  line-height: 20px;
+}
+
+.hn-login:hover {
+  text-decoration: none;
+}
+
+main {
+  background: $beige;
+}
+
+.hn-item div:first-child {
+  white-space: nowrap;
+}
+
+.hn-item-header a {
+  color: $text-black;
+}
+
+.hn-item-url a {
+  color: $dark-gray;
+}
+
+.hn-item-bottom {
+  color: $dark-gray;
+  font-size: 12px;
+}
+
+.hn-item-bottom a {
+  color: $dark-gray;
+}
+
+.hn-item-title a:hover {
+  text-decoration:none;
+}
+
+.hn-item-number {
+  color: $dark-gray;
+}
+
+.hn-comment-info {
+  color: $dark-gray;
+}
+
+.hn-comment-info a {
+  color: $dark-gray;
+}
+
+.vote-up {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background: url("../assets/imgs/grayarrow.gif") no-repeat
+}
+
+.wrapper {
+  width: 100%;
+  padding: 0;
+}
+
+footer {
+  font-size: 12px;
+  background: $beige;
+  border-top: 2px solid $dark-orange;
+  padding: 12px;
+}
+
+footer a {
+  color: $text-black;
+}
+
+.algolia {
+  font-size: 1rem;
+  color: $dark-gray;
+}
+
+footer a:hover {
+  color: $text-black;
+  text-decoration: none;
+}
+
+footer a:visited {
+  color: $dark-gray;
+}
+
+
+.hn-notice {
+  color: $dark-gray;
+}
+
+.hn-notice a {
+  color: $dark-gray;
+  text-decoration: underline;
+}
+
+.hn-item-bottom {
+  color: $dark-gray;
+  font-size: 10px;
+}
+
+.hn-item-bottom a {
+  color: $dark-gray;
+}
+
+
+.hn-jobs-notice {
+  color: $dark-gray;
+}
+
+.hn-jobs-notice a {
+  color: $dark-gray;
+  text-decoration: underline;
+}
+
+.hn-comment-text a {
+  color: $text-black;
+  text-decoration: underline;
+}
+
+.hn-comment-text p {
+  margin-bottom: $spacer * .5;
+}
+
+.more {
+  color: $text-black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.more:hover {
+  color: $text-black;
+  text-decoration: none;
+}
+
+@include media-breakpoint-down(md) {
+  body {
+    margin: 0;
+  }
+
+  main, .hacker-news  {
+    font-size: 18px;
+  }
+
+  nav {
+    font-size: 16px;
+  }
+
+  .site-header {
+    padding: 6px 2px;
+  }
+
+  .hn-login {
+    margin-right: 12px;
+  }
+
+  .hn-item-bottom {
+    font-size: 12px;
+  }
+
+  .hn-comment-info {
+    font-size: 14px;
+  }
+
+  .hn-comment-text {
+    line-height: 18px;
+    font-size: 16px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  main, .hacker-news  {
+    font-size: 16px;
+  }
+
+  .wrapper {
+    padding: 10px;
+
+    min-width: 796px;
+    width: 85%;
+    margin: auto;
+  }
+
+  .site-header {
+    padding: 2px;
+  }
+
+  .hn-login {
+    margin-right: 6px;
+  }
+
+  .hn-item-bottom {
+    font-size: 10px;
+  }
+
+  .hn-comment-info {
+    font-size: 14px;
+  }
+
+  .hn-comment-text {
+    line-height: 16px;
+    font-size: 14px;
+  }
+}
